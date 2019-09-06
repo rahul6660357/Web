@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <style>
+       .menu{
+        border: 2 solid gray ;
+        position: fixed;
+         right: 1.5rem;
+          bottom: 1.5rem
+       }
+   </style>
+    </head>
+    <body style="background-color: gray" onload="start()">
+        <nav class="navbar navbar-expand-sm justify-content-between sticky-top bg-dark navbar-dark py-0">
+            
+           
+            
+            
+            <ul class="navbar-nav ">
+                <li>
+                    <a class="navbar-brand" href="#">My WebSiteName</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" style="background-color: black" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 2</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item d-flex align-items-center text-white ">
+                        <i class="fas fa-users"></i>
+                    <a class="nav-link" href="#">SignUp</a>
+                  </li>
+                  <li class="nav-item d-flex align-items-center text-white">
+                        <i class="fas fa-bars"></i>
+                    <a onclick="Signoutme()" id="logoutme" class="nav-link" href="#">Logout</a>
+                  </li>
+            </ul>
+          </nav>
+<div class="row  text-black p-2 mx-0">
+    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 p-2 ">
+        <div class="card p-2">
+                <div class=" d-flex justify-content-center">
+                <img src="student.png" alt="student" width="100" height="100" class="rounded-circle img-thumbnail">
+                </div>
+
+                    <h4 id="name1" class="text-center"></h4>
+                    <div  class="text-center">Programmer</div>
+                    <hr>
+                <div class="d-flex">
+                <div class="ml-2"><i class="material-icons"> add_location </i></div>
+                <div class="ml-2"><span>Khora Kheri(Karnal)</span> </div>
+                </div>  
+
+                <div class="d-flex">
+                <div class="ml-2"><i class="material-icons"> phone_android </i> </div>
+                <div id="mobile1" class="ml-2"><span></span> </div>
+                 </div>
+                            
+                <div class="d-flex">
+                <div class="ml-2"><i class="material-icons">email </i></div>
+                <div id="email1" class="ml-2"><span></span></div>
+                 </div>
+                            
+                 <div class="d-flex">
+                 <div class="ml-2"><i class="material-icons">alternate_email</i></div>
+                <div class="ml-2"><a href="#">rahulshaarma</a></div>
+                 </div>
+                            
+                 <div class="d-flex">
+                 <div class="ml-2"><i class="material-icons">language</i></div>
+                 <div class="ml-2"><span>English</span></div>
+                </div>
+                 <hr>
+                <div class="text-center mx-auto">
+                    <i class="material-icons " style="color: red"> wb_cloudy</i>
+                    <i class="material-icons">wb_cloudy</i>
+                 </div>
+
+    </div>
+        </div>
+ <div class="col-sm-12 col-md-7 col-lg-8 col-xl-9  p-2">
+    <div class="card p-2">
+        <h4 class="text-uppercase">Background</h4><hr>
+
+         <div class="d-flex">
+                 <div class="ml-2"><i class="material-icons">assignment</i></div>
+                 <div class="ml-2 "><span>ABOUT</span><hr>
+                    It was the industrial revolution that gave birth to environmental pollution as we know it today. London also recorded one of the earlier extreme cases of water quality problems with the Great Stink on the Thames of 1858, which led to construction of the London sewerage system soon afterward. Pollution issues escalated as population growth far exceeded viability of neighborhoods to handle their waste problem. Reformers began to demand sewer systems and clean water.
+                </div>
+                 
+         </div>
+         <div class="d-flex">
+                <div class="ml-2"><i class="material-icons">work</i></div>
+                <div class="ml-2 "><span>WORK EXPERIENCE</span><hr>
+                     <span class="font-bold">Project 1,</span><span class="text-primary">Java,Angular</span>
+                    <div class="d-flex align-items-center" style="font-size: small; color:gray;">Dec,2013-Dec,2014<i class="material-icons ml-1 " style="font-size: 1rem">access_time</i>1 Year</div>
+                   It was the industrial revolution that gave birth to environmental pollution as we know it today. London also recorded one of the earlier extreme cases of water quality problems with the Great Stink on the Thames of 1858, which led to construction of the London sewerage system soon afterward. Pollution issues escalated as population growth far exceeded viability of neighborhoods to handle their waste problem. Reformers began to demand sewer systems and clean water.
+                   <ul class="mt-2" style="list-style: circle">
+                        <li>Random point 1</li>
+                        <li>Random point 2</li>
+                        <li>Random point 3</li>
+                    </ul>
+               </div>
+         </div>
+         <div class="d-flex">
+                <div class="ml-2"><i class="material-icons">build</i></div>
+                <div class="ml-2  flex-grow-1"><span>SKILLS</span><hr>
+                    <div style="border-left:4px solid green">
+                            <div class="ml-2">
+                    <h6>WEB DEVELOPMENT</h6>
+                    <span class="badge badge-primary">HTML</span> <span class="badge badge-primary">CSS</span> <span class="badge badge-primary">JAVASCRIPT</span></div>
+                    </div><hr>
+                    <div  style="border-left:4px solid green">
+                            <div class="ml-2">
+                            <h6>Compression</h6>
+                            <span class="badge badge-primary">Mpeg</span> <span class="badge badge-primary">Mp4</span> <span class="badge badge-primary">GIF</span></div>
+                            </div>
+                 
+               </div>
+                
+        </div>
+
+
+        <div class="d-flex mt-2">
+                <div class="ml-3">
+                        <i class="material-icons">
+                                school
+                                </i>
+                </div>
+                <div class="ml-3 flex-grow-1">
+                   <h5>EDUCATION </h5>
+                   <hr>
+                   <div style="font-size: 0.5rem">
+                   <b>Bachelor of technology, IIT kanpur</b></div>
+                   <div style=" font-size: 0.5rem; color: gray ">june-2011, jan-2014</div>
+                   <div style="font-size: small"><i>CGPA:Random</i></div>
+                   <span class="badge badge-primary">DB1101-Basic SQL</span>  <span class="badge badge-primary">CS2011-java Introduction</span>
+                </div>
+                
+        </div>
+
+        <div class="d-flex mt-2">
+                <div class="ml-3">
+                        <i class="material-icons">
+                                favorite
+                                </i>
+                </div>
+                <div class="ml-3 flex-grow-1">
+                   <h5>INTERESTS </h5>
+                   <hr>
+                   <div class="font-bold">Wildlife</div>
+                   <span class="badge badge-primary">BIRDS</span> <span class="badge badge-primary">LIONS</span>
+                </div>
+                
+               
+                
+        </div>
+        <div class="menu card rounded-circle" ><i class="material-icons">menu</i></div>
+     </div>
+    
+        
+</div>
+</div>
+<script src="8_august_assignment.js"></script>
+    </body>
+</html>
